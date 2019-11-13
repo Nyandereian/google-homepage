@@ -1,0 +1,228 @@
+$button-color: rgb(67, 135, 253);
+$button-color-d1: #3D78DE;
+
+html {
+  font-family: arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  padding-top: 10px;
+  clear: left;
+  line-height: 40px;
+  font-size: 13px;
+  .nav-wrap {
+    float: right;
+    span {
+      margin-right: 20px;
+      &:hover a, &:active a {
+        color: rgba(0, 0, 0, 0.870588);
+        text-decoration: underline;
+      }
+    }
+    .apps {
+      background-image: url("media/misc-icons.png");
+      background-size: cover;
+      background-position: -132px -38px;
+      background-size: 528px 68px;
+      opacity: 0.550000011920929;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
+      &:hover, &:active {
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
+    button {
+      background: $button-color;
+      border: $button-color solid 1px;
+      border-radius: 3px;
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 28px;
+      padding: 0 15px;
+      &:hover, &:active {
+        background-color: $button-color-d1;
+      }
+    }
+  }
+}
+
+
+main {
+  text-align: center;
+  padding: 169px 10px 200px 10px;
+  .logo img {
+    width: 272px;
+    height: 92px;
+    margin-bottom: 25px;
+  }
+  .search-area {
+    position: relative;
+    width: 584px;
+    margin: 0 auto;
+      .search-bar input{
+        width: 584px;
+        height: 46px;
+        border-radius: 40px;
+        margin-bottom: 25px;
+        border: 1px solid rgb(223, 225, 229);
+        padding-left: 50px;
+        color: rgba(0, 0, 0, 0.870588);
+        font-size: 16px;
+        line-height: 34px;
+        &:focus, &:hover {
+          border-color: rgb(223, 225, 229);
+          box-shadow: rgba(32, 33, 36, 0.278431) 0 1px 6px 0;
+        }
+      }
+      .magnifier {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 20px;
+        height: 20px;
+        background-image: url("media/search-time-icon.png");
+        background-size: cover;
+        background-position: top;
+      }
+      .search-buttons button{
+        background: #f2f2f2;
+        color: #5F6368;
+        font-size: 14px;
+        box-shadow: 0;
+        border: 1px solid #f2f2f2;
+        line-height: 40px;
+        padding: 0 24px;
+        border-radius: 4px;
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 1px 0px;
+          border-color: rgb(198, 198, 198);
+          color: rgb(34, 34, 34);
+        }
+      }
+  }
+
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #f2f2f2;
+  padding: 0 3px;
+
+  .privacy {
+    border-top: 1px solid #e4e4e4;
+    position: relative;
+    background: white;
+    overflow: auto;
+    zoom: 1;
+    padding-right: 50px;
+    height: 95px;
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    img {
+      float: left;
+      width: 48px;
+      height: 48px;
+      padding-left: 43px;
+}
+
+    h2,button {
+      display: inline-block;
+    }
+    h2 {
+      padding: 24px;
+      font-size: 24px;
+      line-height: 40px;
+      color: rgba(0,0,0,.87);
+    }
+    .privacy-buttons {
+      position: absolute;
+      right: 0px;
+      top: 30px;
+      padding-right: 40px;
+      button {
+        text-transform: uppercase;
+        height: 36px;
+        border-radius: 8px;
+        font-size: 14px;
+        padding: 0 15px;
+        font-weight: normal;
+        &:hover, &:active {
+          cursor: pointer;
+        }
+      }
+      .remind {
+        color: $button-color;
+        background: white;
+        border: white 1px solid;
+        &:hover {
+          background-color: rgba(153, 153, 153, 0.2);
+        }
+        &:active {
+          background-color: rgba(153, 153, 153, 0.4);
+        }
+      }
+      .review {
+        background-color: $button-color;
+        border: $button-color 1px solid;
+        color: white;
+        &:hover {
+          background-color: $button-color-d1;
+        }
+        &:active {
+          background-color: #356BC4;
+        }
+      }
+    }
+  }
+
+  .location, .main-footer {
+    padding: 0 24px;
+    border-top: 1px solid #e4e4e4;
+  }
+
+  .location, .main-footer a {
+    color: rgba(0, 0, 0, 0.541176);
+  }
+  .location {
+    font-size: 15px;
+    line-height: 40px;
+    padding-left: 50px;
+  }
+
+  .main-footer {
+    line-height: 40px;
+    font-size: 13px;
+    ul,li {
+      display: inline-block;
+      a:hover, a:active {
+        text-decoration: underline;
+      }
+    }
+    .left {
+      float: left;
+      li {
+        padding-left: 27px;
+      }
+    }
+    .right {
+      float: right;
+      li {
+        padding-right: 27px;
+      }
+    }
+  }
+}
